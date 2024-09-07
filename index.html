@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+</head>
+<body>
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+  <button type="button" class="btn btn-lg btn-warning" onclick="chang()" >Change </button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script>
+    function chang() {
+        // Array of color strings
+        var colors = ['black', 'red', 'blue', 'green', 'yellow', 'pink'];
+
+        // Generate a random index to select a color
+        var randomIndex = Math.floor(Math.random() * colors.length);
+
+        // Set the background color of the body
+        document.body.style.backgroundColor = colors[randomIndex];
+    }
+</script>
+</body>
+</html>
